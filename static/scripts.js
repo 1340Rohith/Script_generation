@@ -37,7 +37,7 @@ function openSettings(){
   body.classList.toggle('fade-out');
   setTimeout(() => {
     window.location.href = 'settings.html';
-  }, 5000); // Match the duration of the fade-out transition
+  }, 500); // Match the duration of the fade-out transition
 }
 function openHomePage() {
   const body = document.querySelector('body');

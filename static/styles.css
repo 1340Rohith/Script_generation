@@ -232,3 +232,11 @@ pre {
   font-family: monospace;
   color: #ccc;
 }
+.language-container {
+  display: flex;
+  flex-direction: row;
+}
+.settings-button {
+  all:unset;
+  margin: 0.5rem;
+}
