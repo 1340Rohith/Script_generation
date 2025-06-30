@@ -16,6 +16,12 @@ user_changes = "none"
 
 app = Flask(__name__, template_folder='./templates', static_folder='./static')
 app.static_folder = 'static'
+
+
+@app.route('/settings.html', methods=['GET', 'POST'])
+def settings():
+    return render_template('settings.html')
+
 @app.route('/', methods=['GET', 'POST'])
 def hello():
     global previous_changes_master, previous_changes_logic, previous_changes_creativity

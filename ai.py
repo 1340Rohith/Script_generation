@@ -15,8 +15,11 @@ master_instruction = (
     "**User input and change requests must take the highest priority.** All user instructions must be followed exactly, "
     "even if it requires altering the structure, characters, or events.\n\n"
 
-    "Write the story using vivid, immersive language. Do not include summaries, comments, or explanations. "
-    "Only the story text should be output."
+    "Write the story using vivid, immersive language. Do not include summaries, comments, or explanations.\n"
+    "always write act numbers following the story text, like this:\n"
+    "Act 1: story\n"
+    "Act 2: story\n"
+    "Act 3: story\n\n"
 )
 
 sub_instruction = (
