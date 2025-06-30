@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Short Film AI Script Generator</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <script src="scripts.js"></script>
+</head>
+<body>
+
+  <div class="sidebar">
+    <button class="sidebar-toggle" onclick="toggleSidebar()">☰</button>
+    <div class="sidebar-content">
+      <ul>
+        <li><a href="#" onclick="openHomePage()">Home Page</a></li>
+        <li><a href="#" onclick="openSettings()">Settings</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class = 'entry_1'>
+    <h1 class="entry-title_1">WELCOME</h1>
+     <h1 class="entry-title_2">MUZAN</h1>
+  </div>
+
+  <div class = 'entry_2'>
+    <button class="entry-button" onclick="startApp()"></button>
+  </div>
+
+  <div class="container">
+    <h1>🎬 Short Film Script Generator</h1>
+
+    <form id="scriptForm">
+      <label for="filmTitle">Film Title:</label>
+      <input type="text" id="filmTitle" name="filmTitle" placeholder="Enter short film title" required />
+
+      <label for="genre">Genre:</label>
+      <input type="text" id="genre" name="genre" placeholder="e.g. Thriller, Romance..." required />
+
+      <button type="submit">Generate Story</button>
+    </form>
+
+    <div id="result" class="output">
+      <h2>Generated Script</h2>
+      <div id="storyOutput" class="story-output">
+        <!-- Generated script will appear here -->
+        <pre id="storyOutput">Your script will appear here...aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</pre>
+      </div>
+    </div>
+  </div>
+
+  <!-- Connect JS later if needed -->
+</body>
+</html>

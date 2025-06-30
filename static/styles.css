@@ -1,0 +1,229 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color:  #cd981da8;
+}
+
+/* Layout */
+.entry_1{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50vw;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  font-size: 2rem;
+  z-index: 1003;
+  transition:ease-in;
+}
+.entry_1.close{
+  left: -100vw;
+  transition: left 1s ease-in-out;
+}
+.entry_2.close{
+  left: 101vw;
+  transition: left 1s ease-in-out;
+}
+
+.entry_2{
+  position: fixed;
+  top: 0;
+  left: 50vw;
+  width: 50vw;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: yellow;
+  font-size: 2rem;
+  z-index: 1003;
+  transition: left 1s ease-in-out;
+}
+.entry-title_1{
+  color: #ffea00;
+  display: flex;
+  left:12vw;
+  bottom: 3vw;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  font-size: 8vw;
+  width: 100%;
+  height: 100%;
+}
+.entry-title_2{
+  color: #ffe710;
+  top: 5vw;
+  right:17vw;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  font-size: 8vw;
+  width: 100%;
+  height: 100%;
+}
+
+.entry-button {
+  position: relative;
+  top: 0%;
+  left: -50%;
+  width: 80px;  /* Fixed size instead of 3vw */
+  height: 80px; /* Fixed size instead of 3vw */
+  font-size: 24px; /* Fixed size instead of 2vw */
+  background-color: #ffea00; /* Bright yellow */
+  color: #000;
+  border: 3px solid #000; /* Add border for visibility */
+  cursor: pointer;
+  z-index: 1004; /* Higher than entry sections */
+  border-radius: 50%; /* Make it circular */
+
+}
+
+.entry-button::after {
+  content: '▶'; /* Add play symbol */
+}
+
+.story-output {
+  background-color: #1c1c1c;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-top: 1rem;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+  scrollbar-width: auto;
+  scroll-behavior: smooth;
+  scrollbar-color: yellow #1c1c1c;
+  overflow: auto;
+  max-height: 400px;
+}
+.sidebar-content {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100vh;
+  background-color: #1c1c1c;
+  padding: 1rem;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+  padding: 100px 1rem 1rem 1rem;
+  line-height: 45px;
+  font-size: large;
+  transition: 500ms ease-in-out;
+}
+.sidebar-content a {
+  text-decoration: none;
+  list-style: none;
+}
+.sidebar-content ul {
+  list-style: none;
+}
+
+.sidebar-content.active {
+  left: 0;
+  transition: 500ms ease-in-out;
+}
+
+.container.active{
+  margin-left: 250px;
+  transition: 500ms ease-in-out;
+}
+
+
+.sidebar-toggle {
+  background: none;
+  border: none;
+  color: #ffcc00;
+  position: fixed;
+  top: 2px;
+  left: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  outline: none;
+  z-index: 1000;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #111;
+  color: #eee;
+  padding: 2rem;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.container {
+  background-color: #1c1c1c;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 60vw;
+  margin-top: 1rem;
+  max-width: 700px;
+  max-height: 88vh;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+  transition: 500ms ease-in-out;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #ffcc00;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
+  font-weight: bold;
+}
+
+input[type="text"] {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: none;
+  background: #333;
+  color: #fff;
+  border-radius: 15px;
+}
+
+button {
+  margin-top: 1.5rem;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: none;
+  background: #ffcc00;
+  color: #000;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #938827;
+}
+
+.output {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #222;
+  border-left: 5px solid #ffcc00;
+  border-radius: 5px;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-family: monospace;
+  color: #ccc;
+}
